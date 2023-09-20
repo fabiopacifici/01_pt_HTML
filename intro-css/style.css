@@ -1,0 +1,25 @@
+/* Selects the my-div element */
+#my-div{
+  font-size: 30px;
+}
+
+/* Select all elements with class .title */
+.title{
+  color: rgb(99, 235, 8);
+}
+
+/* Selects all section tags */
+section{
+  background: red;
+}
+
+p {
+  color: red;
+  border: 2px solid red;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #6265ec87;
+  font-weight: bold;
+}

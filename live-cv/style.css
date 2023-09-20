@@ -1,0 +1,44 @@
+body
+{
+  background-color: #ededed;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+
+}
+
+#site_header
+{
+  background-color: #d5d4d4;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 2px solid orangered;
+}
+
+.avatar
+{
+  border-radius: 50%;
+}
+
+/* Main */
+main
+{
+  width: 80%;
+  margin: auto;
+}
+
+.title
+{
+  color: orangered;
+}
+
+h3
+{
+  font-weight: 100;
+}
+
+footer
+{
+  text-align: center;
+  border-top: 2px solid orangered;
+  padding: 10px;
+}
