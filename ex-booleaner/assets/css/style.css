@@ -1,0 +1,172 @@
+/* #region Common */
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root
+{
+  --bool-white: #ffffff;
+  --bool-dark: #010001;
+  --bool-gray: rgba(128, 128, 129, 1);
+  --bool-primary: rgba(77, 160, 254, 1);
+  --bool-primary-soft: rgba(178, 231, 243, 1);
+  --bool-secondary: rgba(52, 180, 232, 1);
+  --bool-default-font-size: 18px;
+}
+
+h1
+{
+  font-size: 2.2rem;
+}
+
+h3
+{
+  color: var(--bool-white);
+}
+
+table
+{
+  border-spacing: 0;
+}
+
+/* #endregion Common */
+
+/* #region Utility */
+
+.py_1
+{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py_2
+{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pl_1
+{
+  padding-left: 1rem;
+}
+
+.pt_1
+{
+  padding-top: 1rem;
+}
+
+.w_50
+{
+  width: 50%;
+}
+
+.text_left
+{
+  text-align: left;
+}
+
+/* .hightlight {
+  background-color: yellow;
+} */
+
+.bg_primary
+{
+  background-color: var(--bool-primary);
+  color: var(--bool-white)
+}
+
+.bg_primary_soft
+{
+  background-color: var(--bool-primary-soft);
+}
+
+/* #endregion Utility */
+
+/* #region Header */
+
+#site_header
+{
+  background-color: var(--bool-primary);
+  background-image: url('../img/pattern.png');
+  background-size: 280px;
+
+}
+
+.logo_img
+{
+  padding: 1rem 0.5rem;
+  /*   padding-top: 1rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.25; */
+}
+
+/* #endregion Header */
+
+/* #region Main */
+
+main
+{
+  width: 80%;
+  margin: auto;
+}
+
+.meta
+{
+  color: var(--bool-gray);
+
+}
+
+.author_link
+{
+  text-decoration: none;
+  color: var(--bool-secondary);
+}
+
+.date
+{
+  font-size: 0.8rem;
+}
+
+.caption
+{
+  font-size: 0.8rem;
+
+}
+
+/* Related articles */
+
+.related_article
+{
+  width: 240px;
+  height: 240px;
+  color: var(--bool-white);
+  padding: 0.5rem;
+  background-repeat: no-repeat;
+}
+
+#monitor
+{
+  background-image: url('../img/monitor.jpg');
+}
+
+#graph
+{
+  background-image: url('../img/graph.jpg');
+}
+
+/* #endregion Main */
+
+/* #region Footer */
+
+footer
+{
+  padding: 3rem 0;
+  background-color: var(--bool-primary);
+  color: var(--bool-white)
+}
+
+/* #endregion Footer */

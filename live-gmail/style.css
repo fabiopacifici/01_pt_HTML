@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --gmail-primary: #fcb401FF;
+  --gmail-dark: #000000;
+  --gmail-light: #ffffff;
+}
+
+
+.debug header {
+  background-color: red;
+  height: 200px;
+}
+
+.debug main
+{
+  background-color: rgb(58, 18, 178);
+  height: 400px;
+}
+
+
+.debug footer
+{
+  background-color: red;
+  height: 200px;
+}
