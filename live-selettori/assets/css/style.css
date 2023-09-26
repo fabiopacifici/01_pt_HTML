@@ -1,0 +1,36 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	background-color: #f2f2f2;
+}
+
+input[type='email']
+{
+	border: 2px solid red;
+}
+
+/* Only divs with class .starred */
+div.starred
+{
+	color: purple;
+}
+
+/* All elements with class .starred */
+.starred{
+
+}
+
+div[class="starred"]{
+	background-color: yellow;
+}
+
+
+.element .selectme {
+	color: rgb(7, 101, 101);
+}
+
