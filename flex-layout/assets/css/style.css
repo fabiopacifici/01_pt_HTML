@@ -1,0 +1,124 @@
+/* Debug */
+.debug .sidebar, .debug aside {
+	/* Bad -  height is given by the content */
+	height: 500px;
+	background-color: purple;
+}
+.debug main {
+
+height: 500px;
+background-color: blue;
+
+}
+.debug #app_header {
+	background-color: red;
+}
+.debug .logo {
+	width: 80px;
+	height: 40px;
+	background-color: black;
+}
+
+.debug .main_menu {
+	height: 40px;
+	width: 200px;
+	background-color: black;
+}
+
+
+.debug #app_footer {
+	height: 250px;
+	background-color: black;
+
+}
+.debug .col-4 {
+	height: 200px;
+	background-color: yellow;
+}
+
+
+/* Common */
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul
+{
+	list-style: none;
+}
+
+a
+{
+	text-decoration: none;
+}
+.sidebar, main, aside {
+	padding: 1rem;
+}
+
+
+/* Utility */
+
+.container {
+	display: flex;
+}
+
+[class^="col-"] {
+	padding: 1rem;
+}
+
+.col-4 {
+	width: calc( (100% / 12) * 4); /* 33.33% */
+}
+.col-6 {
+	width: 50%;
+}
+
+.col-3
+{
+	width: calc((100% / 12) * 3);
+}
+
+/* Header */
+
+#app_header {
+	padding: 1rem;
+
+}
+.main_menu {
+	margin-left: auto;
+}
+.main_menu ul {
+	display: flex;
+	gap: 1rem;
+}
+
+/* Sidebar */
+.sidebar {
+	width: 20%;
+}
+
+/* Main */
+main
+{
+	width: 60%;
+}
+
+
+aside {
+	width: 20%;
+}
+main article {
+	margin-bottom: 1rem;
+}
+
+.adv {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	background-color: green;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
