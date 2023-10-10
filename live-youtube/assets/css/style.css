@@ -1,0 +1,71 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	background-color: rgb(28, 25, 25);
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container
+{
+	max-width: 1440px;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.row
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1rem
+}
+
+[class^="col-"]
+{
+	padding: 1rem;
+}
+
+.col-9
+{
+	width: calc((100% / 12) * 9);
+}
+
+.col-3
+{
+	width: calc((100% / 12) * 3);
+}
+
+
+
+.album {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+.album .album_text h4 {
+	font-family: 'Pixelify Sans', sans-serif;
+}
+.player img, .album img {
+	border-radius: 1rem;
+}
+
+.channel, .metadata {
+	color: gray;
+	font-size: 14px;
+}
+
+
+
+.player_controls {
+	color: white;
+}
