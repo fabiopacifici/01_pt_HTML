@@ -1,0 +1,215 @@
+/*  body
+ {
+ 	background-color: #eaeaea;
+ } */
+
+/* screen size >= 480px 
+ @media screen and (min-width: 480px)
+{
+
+	body
+	{
+		background-color: lightgreen;
+	}
+
+}*/
+
+/*
+@media screen and (min-width: 768px)
+{
+
+	body
+	{
+		background-color: rgb(213, 82, 230);
+	}
+
+} */
+
+/* Mobile First 
+ *
+ {
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ }
+
+ .container
+ {
+ 	width: 80%;
+ 	max-width: 300px;
+ 	margin: auto;
+ }
+
+ @media screen and (min-width: 568px)
+ {
+ 	.container
+ 	{
+ 		max-width: 540px;
+ 	}
+
+ 	p
+ 	{
+ 		color: red;
+ 	}
+
+ }
+
+ @media screen and (min-width: 768px)
+ {
+ 	.container
+ 	{
+ 		max-width: 740px;
+ 	}
+ }
+
+ @media screen and (min-width: 1200px)
+ {
+ 	.container
+ 	{
+ 		max-width: 1140px;
+ 	}
+
+ }
+	  @media screen and (max-width: 1200px)
+	  {
+	  	p
+	  	{
+	  		background-color: black;
+	  	}
+	  }
+		*/
+/* END Mobile First */
+/* 
+p{
+	font-size: 2rem;
+}
+ */
+/* Desktop Fist 
+ @media screen and (max-width: 1400px)
+ {
+ 	p
+ 	{
+		font-size: 1.4rem;
+ 		color: pink;
+ 		background-color: yellow;
+ 	}
+ }
+
+ @media screen and (max-width: 1200px)
+ {
+ 	p
+ 	{
+ 		background-color: black;
+ 	}
+ }
+
+ @media screen and (max-width: 768px)
+ {
+ 	p
+ 	{
+ 		background-color: black;
+ 	}
+ }*/
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+}
+.container
+{
+	width: 70%;
+	max-width: 1176px;
+	margin: auto
+}
+
+.row
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1rem
+}
+
+.col
+{
+	width: 100%;
+	padding: 1rem
+}
+
+
+
+header {
+	background-color: white;
+	box-shadow: 0 0 5px gray;
+}
+
+nav .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+
+.menu ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	list-style: none;
+}
+
+.menu li {
+	padding: 0.54rem;
+}
+
+.banner {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 3rem 0;
+}
+
+
+
+.card {
+	border-radius: 1.5rem;
+	box-shadow: 0 0 10px gray;
+}
+
+
+.card img {
+	border-radius: 1rem;
+}
+.card-body {
+	padding: 0.5rem;
+}
+
+
+@media screen and (min-width: 568px) {
+	.col {
+		width: 50%;
+	}
+}
+
+
+@media screen and (min-width: 768px)
+{
+	.col
+	{
+		width: calc(100% / 3);
+	}
+}
+
+
+@media screen and (min-width: 1440px)
+{
+	.col
+	{
+		width: 25%;
+	}
+}

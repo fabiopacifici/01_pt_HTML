@@ -1,0 +1,209 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root
+{
+	--zoom-black: black;
+	--zoom-dark: #222222;
+	--zoom-primary: #4a4a4a;
+	--zoom-success: #4bc800;
+	--zoom-danger: #f52838;
+	--zoom-white: white;
+}
+
+body
+{
+	background-color: var(--zoom-black)
+}
+
+img
+{
+	max-width: 100%;
+}
+
+/* #region Layout */
+.wrapper
+{
+	height: 100vh;
+	overflow: hidden;
+}
+
+.top
+{
+	height: calc(100% - 80px);
+}
+
+/* Toolbar */
+.toolbar
+{
+	height: 80px;
+	background-color: var(--zoom-dark);
+	align-items: center;
+}
+
+/* #endregion Layout */
+
+/* #region Debug */
+.debug .wrapper
+{
+	background-color: red;
+}
+
+.debug .top_toolbar
+{
+	background-color: gray;
+}
+
+.debug .partecipant
+{
+	aspect-ratio: 1 / 1;
+	background-color: gray;
+}
+
+.debug .left,
+.debug .right,
+.debug .center
+{
+	border: 1px dashed white;
+	height: 100%;
+}
+
+/* #endregion Debug */
+
+/* #region Utility */
+
+.container
+{
+	max-width: 1152px;
+	margin: auto;
+	width: 90%;
+}
+
+.d-flex
+{
+	display: flex;
+}
+
+.flex-wrap
+{
+	flex-wrap: wrap;
+}
+
+.justify-content-center
+{
+	justify-content: center;
+}
+
+.btn
+{
+	background-color: transparent;
+	border: none;
+	padding: 0.25rem;
+	border-radius: 0.25rem;
+	transition: all 1s;
+}
+
+.btn-primary
+{
+	background-color: var(--zoom-primary);
+	color: var(--zoom-white);
+
+}
+
+.btn:hover
+{
+	background-color: #f52838;
+}
+
+.text-end
+{
+	text-align: end;
+}
+
+/* #endregion Utility */
+
+/* #region Top */
+
+.top_toolbar
+{
+	padding: 0.5rem;
+	text-align: end;
+}
+
+/* Partecipants */
+.partecipants
+{
+	height: calc(100% - 40px);
+	padding: 2rem 0;
+	overflow-y: auto;
+}
+
+.partecipants .container
+{
+	gap: 0.5rem;
+}
+
+.partecipants .partecipant
+{
+	width: calc((100% / 7) - 0.5rem);
+	transition: all;
+}
+
+.partecipant:hover
+{
+	border: 4px solid white;
+	transform: scale(1.1);
+	border-radius: 0.5rem;
+}
+
+/* #endregion Top */
+
+/* #region footer */
+footer.toolbar
+{
+	color: var(--zoom-white);
+	display: flex;
+	align-items: center;
+}
+
+footer.toolbar > .left,
+footer.toolbar > .right
+{
+	flex-grow: 1;
+	padding: 0.25rem;
+}
+
+footer.toolbar > .center
+{
+	flex-grow: 2;
+	padding: 0.25rem;
+}
+
+/* #endregion footer */
+
+button.animate
+{
+	border: 1px solid red;
+	animation-name: jump;
+	animation-duration: 4s;
+
+}
+
+@keyframes jump
+{
+	from
+	{
+		position: relative;
+		top: 0;
+	}
+
+	to
+	{
+		position: relative;
+		top: 10px;
+	}
+}
